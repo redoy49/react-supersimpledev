@@ -1,0 +1,2 @@
+01. What is React?
+Ans: React is a JavaScript/external library for building user interfaces, especially for single-page applications (SPAs). It was developed by Meta and allows developers to create fast, modular, and reusable UI components using a declarative, component-based approach. React uses a virtual DOM to optimize rendering performance and is maintained by both Meta and a large open-source community.
