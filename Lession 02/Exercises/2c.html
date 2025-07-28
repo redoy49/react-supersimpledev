@@ -11,10 +11,25 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
-      const button = <button>Goog Job!</button>;
+
+      function App() {
+        return (
+          <>
+            <p>Hello, welcome to my website.</p>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="password" placeholder="Password" />  
+            </div>
+            <button>Sign In</button>
+            <button>Sign Up</button>
+          </>
+        );
+      }
 
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render(button);
+      ReactDOM.createRoot(container).render(<App/>);
     </script>
   </body>
 </html>

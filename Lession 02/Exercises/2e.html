@@ -11,25 +11,27 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
-      const socks = 10
-      const tshirt = 8
 
-      const productCost = socks + tshirt * 2
-      const shippingCost = 5
-      const totalCost = productCost + shippingCost
-
-      const  div = (
-        <div>
-          <p>Product Cost : {productCost}</p> 
-          <p>Shipping Cost : {shippingCost}</p> 
-          <p>Total Cost : {totalCost}</p> 
-          <button>Place your order</button>
-        </div>
-      )
+      function ProductDetails({productName, price}) {
+        return (
+          <>
+            <p>{productName}</p>
+            <p>Price: ${price}</p>
+            <button>Add to Cart</button>
+          </>
+        )
+      }
       
+      function App() {
+       return (
+        <> 
+          <ProductDetails productName="Cotton socks" price="10.90" />
+        </>
+       )
+      }
 
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render(div);
+      ReactDOM.createRoot(container).render(<App/>);
     </script>
   </body>
 </html>

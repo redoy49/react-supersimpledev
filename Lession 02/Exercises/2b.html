@@ -10,14 +10,20 @@
     <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
-    <script type="text/babel"> 
-    const socks = 10;
-    const tshirt = 8
-    const productCost = socks + tshirt * 2
-    console.log("Product Cost", productCost)  
+    <script type="text/babel">
+
+      function App() {
+        return (
+          <div>
+            <p>Hello, welcome to my website.</p>
+            <button>Sign In</button>
+            <button>Sign Up</button>
+          </div>
+        )
+      }
 
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render('Calculate Product Cost');
+      ReactDOM.createRoot(container).render(<App/>);
     </script>
   </body>
 </html>
